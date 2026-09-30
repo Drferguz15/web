@@ -1,0 +1,665 @@
+    /* =====================================
+   CONFIGURACIÓN GENERAL
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #243746;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =====================================
+   NAVEGACIÓN
+===================================== */
+
+.header {
+    width: 100%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.nav {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.marca img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.marca h2 {
+    color: #159dd8;
+    font-size: 27px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #334b5b;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #16a4e0;
+}
+
+
+/* =====================================
+   INICIO
+===================================== */
+
+.inicio {
+    min-height: 680px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #e5f8ff 0%,
+            #f7fdff 55%,
+            #ccefff 100%
+        );
+
+    display: flex;
+    align-items: center;
+}
+
+.inicio-contenido {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.subtitulo {
+    display: inline-block;
+    color: #159ed9;
+    background: #d9f4ff;
+    padding: 7px 17px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.inicio h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    color: #16445b;
+    margin-bottom: 25px;
+}
+
+.inicio h1 span {
+    color: #159ed9;
+}
+
+.inicio p {
+    font-size: 18px;
+    color: #536b78;
+    margin-bottom: 17px;
+}
+
+.inicio-imagen {
+    text-align: center;
+}
+
+.inicio-imagen img {
+    width: 420px;
+    background: white;
+    padding: 25px;
+    border-radius: 50%;
+    box-shadow: 0 20px 50px rgba(24, 154, 212, 0.25);
+}
+
+.botones-inicio {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+.boton {
+    display: inline-block;
+    background: #159ed9;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    transform: translateY(-3px);
+    background: #087fb4;
+}
+
+.boton-blanco {
+    background: white;
+    color: #159ed9;
+    border: 2px solid #159ed9;
+}
+
+.boton-blanco:hover {
+    color: white;
+}
+
+
+/* =====================================
+   SECCIONES
+===================================== */
+
+.seccion {
+    padding: 110px 0;
+}
+
+.titulo-seccion {
+    max-width: 760px;
+    text-align: center;
+    margin: 0 auto 65px;
+}
+
+.titulo-seccion span {
+    color: #159ed9;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.titulo-seccion h2 {
+    color: #16445b;
+    font-size: 42px;
+    margin: 10px 0 15px;
+}
+
+.titulo-seccion p {
+    color: #657a86;
+    font-size: 18px;
+}
+
+
+/* =====================================
+   NOSOTROS
+===================================== */
+
+.nosotros {
+    background: #ffffff;
+}
+
+.nosotros-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.nosotros-imagen img {
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.nosotros-texto h3 {
+    font-size: 34px;
+    color: #174b65;
+    margin-bottom: 20px;
+}
+
+.nosotros-texto > p {
+    margin-bottom: 18px;
+    font-size: 17px;
+    color: #5a6e7a;
+}
+
+.caracteristicas {
+    margin-top: 30px;
+}
+
+.caracteristica {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.icono {
+    background: #159ed9;
+    color: white;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.caracteristica h4 {
+    color: #174b65;
+    margin-bottom: 5px;
+}
+
+
+/* =====================================
+   SERVICIOS
+===================================== */
+
+.servicios {
+    background: #edfaff;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.servicio-card {
+    background: white;
+    padding: 40px 27px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(37, 120, 160, 0.08);
+    border-bottom: 5px solid #23a8df;
+    transition: 0.3s;
+}
+
+.servicio-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 18px 45px rgba(31, 145, 194, 0.2);
+}
+
+.servicio-icono {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dff6ff;
+    border-radius: 50%;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.servicio-card h3 {
+    color: #16445b;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.servicio-card p {
+    color: #607581;
+    margin-bottom: 25px;
+}
+
+.servicio-card a {
+    color: #159ed9;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   PROFESIONALES
+===================================== */
+
+.profesionales {
+    background: white;
+}
+
+.profesionales-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.medico-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.medico-card:hover {
+    transform: translateY(-10px);
+}
+
+.medico-imagen {
+    height: 330px;
+    overflow: hidden;
+}
+
+.medico-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.medico-card:hover img {
+    transform: scale(1.06);
+}
+
+.medico-info {
+    padding: 25px;
+}
+
+.medico-info span {
+    display: inline-block;
+    color: #159ed9;
+    background: #e4f7ff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.medico-info h3 {
+    color: #17465e;
+    margin-bottom: 10px;
+}
+
+.medico-info p {
+    color: #657986;
+    font-size: 15px;
+}
+
+
+/* =====================================
+   CONTACTOS
+===================================== */
+
+.contactos {
+    background: linear-gradient(
+        135deg,
+        #087daf,
+        #18a8e4
+    );
+}
+
+.titulo-blanco span {
+    color: #c8f1ff;
+}
+
+.titulo-blanco h2 {
+    color: white;
+}
+
+.titulo-blanco p {
+    color: #e2f8ff;
+}
+
+.contactos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.contacto-card {
+    display: block;
+    background: white;
+    border-radius: 17px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.contacto-card:hover {
+    transform: translateY(-10px);
+}
+
+.contacto-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.contacto-info {
+    padding: 25px;
+}
+
+.contacto-info h3 {
+    color: #16445b;
+    font-size: 21px;
+}
+
+.contacto-info p {
+    color: #657782;
+    margin: 8px 0 20px;
+}
+
+.contacto-info span {
+    display: block;
+    background: #25d366;
+    color: white;
+    padding: 12px;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   AVISO MÉDICO
+===================================== */
+
+.aviso {
+    background: #f3fbff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.aviso .contenedor {
+    max-width: 850px;
+}
+
+.aviso h2 {
+    color: #169bd5;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.aviso p {
+    color: #5f7480;
+    margin-bottom: 10px;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background: #10394c;
+    color: white;
+}
+
+.footer-contenido {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    padding: 70px 0;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.footer-logo h2 {
+    font-size: 30px;
+}
+
+.footer-logo p,
+.footer-contacto p {
+    color: #bdd3dd;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu h3,
+.footer-contacto h3 {
+    margin-bottom: 18px;
+}
+
+.footer-menu a {
+    color: #bdd3dd;
+    margin-bottom: 8px;
+}
+
+.footer-menu a:hover {
+    color: white;
+}
+
+.copyright {
+    border-top: 1px solid #285568;
+    text-align: center;
+    padding: 20px;
+    color: #9db9c6;
+}
+
+
+/* =====================================
+   DISEÑO PARA CELULARES
+===================================== */
+
+@media (max-width: 1000px) {
+
+    .servicios-grid,
+    .profesionales-grid,
+    .contactos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inicio-contenido,
+    .nosotros-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .inicio {
+        padding: 80px 0;
+    }
+
+    .inicio-texto {
+        text-align: center;
+    }
+
+    .botones-inicio {
+        justify-content: center;
+    }
+
+    .inicio-imagen {
+        margin-top: 30px;
+    }
+
+}
+
+
+/* =====================================
+   DISEÑO CELULAR PEQUEÑO
+===================================== */
+
+@media (max-width: 700px) {
+
+    .nav {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .menu {
+        margin-top: 15px;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .inicio h1 {
+        font-size: 40px;
+    }
+
+    .inicio p {
+        font-size: 16px;
+    }
+
+    .servicios-grid,
+    .profesionales-grid,
+    .contactos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 34px;
+    }
+
+    .nosotros-imagen img {
+        height: 350px;
+    }
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .botones-inicio {
+        flex-direction: column;
+    }
+
+}
